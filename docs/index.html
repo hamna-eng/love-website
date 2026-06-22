@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Do You Love Me? 💖</title>
+
+<style>
+body{
+background:#ffd1dc;
+text-align:center;
+font-family:cursive;
+}
+
+h1{
+color:white;
+margin-top:40px;
+}
+
+button{
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:20px;
+margin:20px;
+cursor:pointer;
+}
+
+#yes{
+background:#ff69b4;
+color:white;
+}
+
+#no{
+background:white;
+}
+</style>
+
+<script>
+function moveButton(){
+let btn=document.getElementById("no");
+
+btn.style.position="absolute";
+btn.style.left=Math.random()*800+"px";
+btn.style.top=Math.random()*500+"px";
+}
+</script>
+
+</head>
+
+<body>
+
+<img src="https://media.tenor.com/Vs4KqM6S7L8AAAAi/bubu-dudu.gif" width="250">
+
+<h1>Do you love me? ❤️</h1>
+
+<button id="yes" onclick="window.location.href='yes.html'">
+Yes 💖
+</button>
+
+<button id="no" onmouseover="moveButton()">
+No 😢
+</button>
+
+</body>
+</html>
